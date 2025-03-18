@@ -5,13 +5,13 @@ class Movie
 
     protected $duration;
     public $nationality;
-    public $genre;
+    public $genres;
 
-    public function __construct($_duration, $_nationality, Genre $_genre)
+    public function __construct($_duration, $_nationality, Genres $_genres)
     {
         $this->duration = $_duration;
         $this->nationality = $_nationality;
-        $this->genre = $_genre;
+        $this->genres = $_genres;
     }
 
     public function getDuration()
