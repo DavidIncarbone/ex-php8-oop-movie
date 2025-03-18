@@ -7,6 +7,8 @@ class Movie
     public $nationality;
     public $genres;
 
+    use Director;
+
     public function __construct($_duration, $_nationality, Genres $_genres)
     {
         $this->duration = $_duration;

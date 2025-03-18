@@ -1,21 +1,11 @@
 <?php
 
+require_once "./traits/director.php";
+
 require_once "./models/genres.php";
 require_once "./models/movie.php";
 
-$titanic = new Movie("2:50", "US", new Genres(["Dramatic", "History"]));
-$il_padrino = new Movie("2:30", "US", new Genres(["Thriller"]));
-
-var_dump($titanic->getDuration());
-var_dump($titanic->nationality);
-
-var_dump($il_padrino->getDuration());
-var_dump($il_padrino->nationality);
-
-var_dump($titanic);
-var_dump($il_padrino);
-
-
+require_once "./vars.php";
 
 ?>
 
