@@ -1,6 +1,22 @@
 <?php
 
-session_start();
+require_once "./models/genre.php";
+require_once "./models/movie.php";
+
+$titanic = new Movie("2:50", "US", new Genre("Dramatic", "History"));
+$il_padrino = new Movie("2:30", "US", new Genre("Thriller", "History"));
+
+var_dump($titanic->getDuration());
+var_dump($titanic->nationality);
+
+var_dump($il_padrino->getDuration());
+var_dump($il_padrino->nationality);
+
+var_dump($titanic);
+var_dump($il_padrino);
+
+
+
 
 ?>
 
