@@ -2,12 +2,17 @@
 
 class Genres
 {
-    public $genres;
+    public array $genres;
 
 
-    public function __construct(array $_genres)
+    public function __construct($_genres)
     {
 
         $this->genres = $_genres;
+    }
+
+    public function getGenres()
+    {
+        return $this->genres;
     }
 }

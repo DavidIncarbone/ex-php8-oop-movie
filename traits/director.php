@@ -9,4 +9,9 @@ trait Director
     {
         $this->director = $director;
     }
+
+    public function getDirector()
+    {
+        return $this->director;
+    }
 }

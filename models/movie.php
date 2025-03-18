@@ -3,26 +3,26 @@
 class Movie
 {
 
-    protected $duration;
-    public $nationality;
+    protected $name;
+    public $description;
     public $genres;
 
     use Director;
 
-    public function __construct($_duration, $_nationality, Genres $_genres)
+    public function __construct($_name, $_description, Genres $_genres)
     {
-        $this->duration = $_duration;
-        $this->nationality = $_nationality;
-        $this->genres = $_genres;
+        $this->name = $_name;
+        $this->description = $_description;
+        $this->genres = $_genres->getGenres();
     }
 
-    public function getDuration()
+    public function getname()
     {
-        return $this->duration;
+        return $this->name;
     }
 
-    public function setDuration($duration)
+    public function setname($name)
     {
-        $this->duration = $duration;
+        $this->name = $name;
     }
 }
