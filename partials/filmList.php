@@ -13,7 +13,7 @@
                  <div class="card h-100">
                      <div class="card-body d-flex flex-column">
 
-                         <!-- Aggiungi altezza fissa all'immagine -->
+
                          <img src="<?php echo $film->cover ?>"
                              class="card-img-top"
                              alt="<?php echo $film->getName() ?>"
