@@ -1,9 +1,3 @@
-<?php
-
-require_once "./db.php";
-
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -18,7 +12,7 @@ require_once "./db.php";
 <body class="p-3">
     <h1 class="text-center mb-5">Lista dei Film</h1>
 
-    <?php require_once "./filmList.php" ?>
+    <?php require_once "./partials/filmList.php" ?>
 
 </body>
 

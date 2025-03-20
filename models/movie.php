@@ -5,15 +5,17 @@ class Movie
 
     protected $name;
     public $description;
+    public $cover;
     public $genres;
 
     use Director;
 
-    public function __construct($_name, $_description, Genres $_genres)
+    public function __construct($_name, $_description, $_cover, Genres $genres)
     {
         $this->name = $_name;
         $this->description = $_description;
-        $this->genres = $_genres->getGenres();
+        $this->cover = $_cover;
+        $this->genres = $genres->getGenres();
     }
 
     public function getname()
